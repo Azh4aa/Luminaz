@@ -1,25 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luminaz - The Only Path to true Global Education</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; text-align: center; padding: 40px; background-color: #f8f9fa; color: #343a40; }
-        h1 { font-size: 50px; color: #0056b3; }
-        p { font-size: 18px; line-height: 1.6; }
-        .container { max-width: 600px; margin: auto; }
-        .footer { margin-top: 40px; font-size: 14px; color: #6c757d; }
-    </style>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luminaz: Global Education Initiative</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            'brand-teal': '#00575E',
+            'brand-off-white': '#FCF7EB',
+            'brand-yellow': '#FAE986',
+            'brand-light-blue': '#76C8E9',
+          }
+        }
+      }
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.1",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^11.3.19"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
 </head>
-<body>
-    <div class="container">
-        <h1>Luminaz</h1>
-        <p>Coming Soon! We are building a platform to help students from the Middle East, And Asian Countries to realize their dreams of studying abroad.</p>
-        <p>Contact us at: info@luminaz.tech</p>
-        <div class="footer">
-            We are preparing for our launch. Stay tuned.
-        </div>
-    </div>
+<body class="bg-brand-off-white">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
 </body>
 </html>
